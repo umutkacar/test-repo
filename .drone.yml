@@ -1,4 +1,5 @@
 kind: pipeline
+type: docker
 name: default
 
 steps:
@@ -13,6 +14,7 @@ steps:
 
 ---
 kind: secret
+name: test
 
 external_data:
   username:
