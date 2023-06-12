@@ -23,5 +23,5 @@ get:
 kind: secret
 name: password
 get:
-  path: kv/docker
+  path: kv/data/docker
   name: password
