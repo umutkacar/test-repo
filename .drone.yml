@@ -14,9 +14,14 @@ steps:
 
 ---
 kind: secret
-name: test
+name: username
+get:
+  path: kv/data/docker
+  name: username
 
-external_data:
-  username:
-    path: kv/docker
-    name: username
+---
+kind: secret
+name: password
+get:
+  path: kv/docker
+  name: password
