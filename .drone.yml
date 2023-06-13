@@ -17,12 +17,12 @@ steps:
 kind: secret
 name: username
 get:
-  path: secrets/data/docker
+  path: secret/data/docker
   name: username
 
 ---
 kind: secret
 name: password
 get:
-  path: secrets/data/docker
+  path: secret/data/docker
   name: password
