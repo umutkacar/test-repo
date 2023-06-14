@@ -30,5 +30,5 @@ name: password
 
 external_data:
   password:
-    path: secret/data/docker
+    path: secrets/secret/data/docker
     name: password
