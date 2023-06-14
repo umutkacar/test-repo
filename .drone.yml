@@ -9,9 +9,13 @@ steps:
   environment:
     USERNAME:
       from_secret: username
+    PASSWORD:
+      from_secret: password
   commands:
   - echo "hi there"
   - echo ${USERNAME}
+  - echo "your password is"
+  - echo ${PASSWORD}
 
 ---
 kind: secret
