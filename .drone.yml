@@ -1,32 +1,21 @@
 ---
 kind: pipeline
 type: docker
-name: default
+name: greeting
 
 steps:
-- name: build
-  image: alpine
+- name: en
+  image: alpine:3.8
   environment:
     USERNAME:
       from_secret: username
     PASSWORD:
       from_secret: password
   commands:
-  - echo "hi there"
-  - echo ${USERNAME}
-  - echo "your password is"
-  - echo ${PASSWORD}
-
+  - env
 ---
 kind: secret
 name: username
 get:
   path: secret/data/docker
   name: username
-
----
-kind: secret
-name: password
-get:
-  path: secret/data/docker
-  name: password
