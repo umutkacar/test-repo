@@ -12,8 +12,8 @@ steps:
     PASSWORD:
       from_secret: password
   commands:
-  - echo ${USERNAME}
-  - echo ${PASSWORD}
+  - echo "the username is $${USERNAME}"
+  - echo "and the password is ${PASSWORD}"
 
 ---
 kind: secret
