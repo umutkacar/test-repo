@@ -20,3 +20,10 @@ name: username
 get:
   path: secret/data/docker
   name: username
+
+---
+kind: secret
+name: password
+get:
+  path: secret/data/docker
+  name: password
