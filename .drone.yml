@@ -27,8 +27,6 @@ get:
 ---
 kind: secret
 name: password
-
-external_data:
-  password:
-    path: secret/data/docker
-    name: password
+get:
+  path: secret/data/docker
+  name: password
