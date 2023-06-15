@@ -12,7 +12,8 @@ steps:
     PASSWORD:
       from_secret: password
   commands:
-  - env
+  - echo ${USERNAME}
+  - echo ${PASSWORD}
 
 ---
 kind: secret
