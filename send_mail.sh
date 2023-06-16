@@ -1,5 +1,7 @@
 #!/bin/sh
 
+set -x #echo on
+
 curl -s \
 	-X POST \
 	--user "dummyuser:dummypassword" \
