@@ -14,17 +14,8 @@ steps:
   commands:
   - echo "the username is $${USERNAME}"
   - echo "and the password is $${PASSWORD}"
-
-- name: Run Test Script
-  image: alpine:3.8
-  environment:
-    USERNAME:
-      from_secret: username
-    PASSWORD:
-      from_secret: password
-  commands:
-    - chmod +x send_mail.sh
-    - ./send_mail.sh
+  - chmod +x send_mail.sh
+  - ./send_mail.sh
 
 ---
 kind: secret
