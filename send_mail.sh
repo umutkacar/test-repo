@@ -2,7 +2,7 @@
 
 curl -s \
 	-X POST \
-	--user "${USERNAME}:${PASSWORD}" \
+	--user "dummyuser:dummypassword" \
 	https://api.mailjet.com/v3/send \
 	-H 'Content-Type: application/json' \
 	-d '{
