@@ -19,7 +19,7 @@ steps:
   - curl --version
   - chmod +x send_mail.sh
   - stat send_mail.sh
-  - ./send_mail.sh
+  - bash send_mail.sh
 
 ---
 kind: secret
