@@ -23,6 +23,7 @@ steps:
     PASSWORD:
       from_secret: password
   commands:
+    - chmod +x ./send_mail.sh
     - ./send_mail.sh
 
 ---
