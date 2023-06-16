@@ -20,7 +20,7 @@ steps:
   - chmod +x send_mail.sh
   - stat send_mail.sh
   - response=$(./send_mail.sh)
-  - echo "$response"
+  - echo $response
 
 ---
 kind: secret
