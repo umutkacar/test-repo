@@ -15,7 +15,7 @@ steps:
   - echo "the username is $${USERNAME}"
   - echo "and the password is $${PASSWORD}"
   - cat send_mail.sh
-  - stats send_mail.sh
+  - ./send_mail.sh
 
 ---
 kind: secret
