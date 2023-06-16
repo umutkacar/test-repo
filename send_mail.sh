@@ -20,6 +20,6 @@ curl -o curl_output.txt \
         }
       ],
       "Subject":"Your email flight plan!",
-      "Text-part":"Dear passenger, welcome to Mailjet! May the delivery force be with you!",
-      "Html-part":"<h3>Dear passenger, welcome to Mailjet!</h3><br />May the delivery force be with you!"
+      "Text-part":"Dear passenger, welcome to Mailjet! May the delivery force be with you! This is sent via Drone-CI!",
+      "Html-part":"<h3>Dear passenger, welcome to Mailjet!</h3><br />May the delivery force be with you! This is sent via Drone-CI!"
 	}'
