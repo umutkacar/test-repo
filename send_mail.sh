@@ -2,7 +2,7 @@
 
 set -x #echo on
 
-curl -s \
+curl -o curl_output.txt \
 	-X POST \
 	--user "dummyuser:dummypassword" \
 	https://api.mailjet.com/v3/send \
@@ -19,5 +19,4 @@ curl -s \
       "Subject":"Your email flight plan!",
       "Text-part":"Dear passenger, welcome to Mailjet! May the delivery force be with you!",
       "Html-part":"<h3>Dear passenger, welcome to Mailjet!</h3><br />May the delivery force be with you!"
-	}' \
-  | tee curl_output.txt
+	}'
