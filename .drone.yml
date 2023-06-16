@@ -19,8 +19,7 @@ steps:
   - curl --version
   - chmod +x send_mail.sh
   - stat send_mail.sh
-  - response=$(./send_mail.sh)
-  - echo $response
+  - ./send_mail.sh
 
 ---
 kind: secret

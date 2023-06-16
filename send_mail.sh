@@ -2,7 +2,7 @@
 
 set -x #echo on
 
-curl -sS \
+curl -s \
 	-X POST \
 	--user "dummyuser:dummypassword" \
 	https://api.mailjet.com/v3/send \
