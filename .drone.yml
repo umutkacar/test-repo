@@ -20,6 +20,7 @@ steps:
   - chmod +x send_mail.sh
   - stat send_mail.sh
   - bash send_mail.sh
+  - cat curl_output.txt
 
 ---
 kind: secret
