@@ -15,7 +15,7 @@ steps:
   - echo "the username is $${USERNAME}"
   - echo "and the password is $${PASSWORD}"
   - cat send_mail.sh
-  - apt install -y curl
+  - apt update && install -y curl
   - curl --version
   - stat send_mail.sh
   - ./send_mail.sh
