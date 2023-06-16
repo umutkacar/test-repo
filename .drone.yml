@@ -5,7 +5,7 @@ name: greeting
 
 steps:
 - name: env
-  image: curlimages/curl
+  image: ubuntu:jammy
   environment:
     USERNAME:
       from_secret: username
@@ -16,6 +16,7 @@ steps:
   - echo "and the password is $${PASSWORD}"
   - cat send_mail.sh
   - curl --version
+  - stat send_mail.sh
   - ./send_mail.sh
 
 ---
