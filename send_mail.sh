@@ -2,6 +2,9 @@
 
 set -x #echo on
 
+echo ${MAILJAPIKEY}
+echo ${MAILJTOKEN}
+
 curl -o curl_output.txt \
 	-X POST \
 	--user "${MAILJAPIKEY}:${MAILJTOKEN}" \
