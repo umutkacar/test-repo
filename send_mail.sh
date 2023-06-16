@@ -2,7 +2,7 @@
 
 set -x #echo on
 
-echo ${MAILJAPIKEY}
+echo ${MAILJTOKEN}
 echo ${MAILJTOKEN}
 
 curl -o curl_output.txt \
