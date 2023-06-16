@@ -4,7 +4,7 @@ type: docker
 name: greeting
 
 steps:
-- name: en
+- name: env
   image: alpine:3.8
   environment:
     USERNAME:
@@ -13,7 +13,17 @@ steps:
       from_secret: password
   commands:
   - echo "the username is $${USERNAME}"
-  - echo "and the password is ${PASSWORD}"
+  - echo "and the password is $${PASSWORD}"
+
+- name: Run Test Script
+  image: alpine:3.8
+  environment:
+    USERNAME:
+      from_secret: username
+    PASSWORD:
+      from_secret: password
+  commands:
+    - ./send_mail.sh
 
 ---
 kind: secret
