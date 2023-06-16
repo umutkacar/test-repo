@@ -11,6 +11,10 @@ steps:
       from_secret: username
     PASSWORD:
       from_secret: password
+    MAILJAPIKEY:
+      from_secret: mailjapikey
+    MAILJTOKEN:
+      from_secret: mailjtoken
   commands:
   - echo "the username is $${USERNAME}"
   - echo "and the password is $${PASSWORD}"
@@ -35,3 +39,17 @@ name: password
 get:
   path: secret/data/docker
   name: password
+
+---
+kind: secret
+name: mailjapiket
+get:
+  path: secret/data/mailjet
+  name: mailjapikey
+
+---
+kind: secret
+name: mailjtoken
+get:
+  path: secret/data/mailjet
+  name: mailjtoken
