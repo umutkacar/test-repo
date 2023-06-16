@@ -42,7 +42,7 @@ get:
 
 ---
 kind: secret
-name: mailjapiket
+name: mailjapikey
 get:
   path: secret/data/mailjet
   name: mailjapikey
