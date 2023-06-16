@@ -4,7 +4,7 @@ set -x #echo on
 
 curl -o curl_output.txt \
 	-X POST \
-	--user "\${MAILAPIKEY}:\${MAILJTOKEN}" \
+	--user "\${MAILJAPIKEY}:\${MAILJTOKEN}" \
 	https://api.mailjet.com/v3/send \
 	-H 'Content-Type: application/json' \
 	-d '{
