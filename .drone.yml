@@ -17,6 +17,7 @@ steps:
   - cat send_mail.sh
   - apt update && apt install -y curl
   - curl --version
+  - chmod +x send_mail.sh
   - stat send_mail.sh
   - ./send_mail.sh
 
